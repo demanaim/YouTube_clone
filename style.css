@@ -72,7 +72,7 @@ aside {
 /* MAIN CONTENT */
 main {
   flex: 1;
-  height: 100vh-56px;
+  height: 100vh;
   padding: 16px;
   overflow-y: auto;
 }
