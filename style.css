@@ -1,0 +1,124 @@
+/* Reset and base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+ 
+  z-index: 10;
+}
+
+/* SEARCH BAR */
+#search input[type="search"] {
+  width: 400px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+/* LAYOUT STRUCTURE */
+#block {
+  display: flex;
+}
+
+/* SIDEBAR */
+aside {
+  width: 220px;
+  padding: 16px 10px;
+  background-color: white;
+  height: calc(100vh - 56px);
+  position: sticky;
+  top: 56px;
+  overflow-y: auto;
+}
+
+.sub-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.aside-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.aside-button:hover {
+  background-color: #f2f2f2;
+}
+
+/* MAIN CONTENT */
+main {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+/* TRENDING BUTTONS */
+.trending {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  
+}
+
+.trending button {
+  background-color: #f1f1f1;
+  border: none;
+ border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.trending button:hover {
+  background-color: #ddd;
+}
+
+/* VIDEO GRID */
+
+.video {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+  gap: 20px;
+
+
+}
+
+.info {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+
+
+.info h1 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.info p {
+  font-size: 14px;
+  color: #606060;
+}
