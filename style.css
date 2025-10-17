@@ -44,6 +44,10 @@ aside {
   top: 56px;
   overflow-y: auto;
 }
+.menu{
+  border-radius: 20px;
+  cursor: auto;
+}
 
 .sub-menu {
   display: flex;
@@ -68,6 +72,7 @@ aside {
 /* MAIN CONTENT */
 main {
   flex: 1;
+  height: 100vh-56px;
   padding: 16px;
   overflow-y: auto;
 }
